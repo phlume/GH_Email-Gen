@@ -1,0 +1,55 @@
+=-=-=_GARE Changelog_=-=-=
+
+4.5.1.3 - 
+Updated script to be less "GH" and more universal
+
+4.5.1.1 - 
+edited prompts to take out Hex input for text color and use boolean for "fff" or "000"
+
+4.5.1 - 
+updated padding around the top nav for the correct spacing below and above the nave text.
+
+4.5 -
+added dynamic naming of table links in document
+added dynamic linking of nav links to document
+
+4.0 -
+added header in own table
+added header links
+added header image
+added header hex color
+added link hex color
+
+3.5 - 
+placed fineprint into own table dynamically
+
+3.2 - 
+added global gift card banner 
+
+3.0 - 
+added subject line encoding
+added preheader encoding
+added fineprint encoding
+
+2.4.5 - 
+removed heights/widths from td output
+
+2.4- 
+added image path to output
+
+2.2.5 -
+added requote to click of bar
+
+2.2 - 
+updated output code quotes
+
+2.0.2 - 
+changed timing of quote
+changed output colors
+
+2.0 -
+Handed off to me
+
+.01- 1.99
+OM acquisition
+
