@@ -6,13 +6,13 @@ javascript:(function(){ if (typeof jQuery == 'undefined') {
 	document.body.appendChild(jQ);
 
 	/* Initial message to users */
-	alert("**   Updated 3/5/14   ** \n\nGarE Says:\n\nHex value for color nav\nis now a \"yes\' or \"no\" question.\n\t...Good luck.\n\n\n\tGarE is requested.")
+	//alert("**   Updated 3/5/14   ** \n\nGarE Says:\n\nHex value for color nav\nis now a \"yes\' or \"no\" question.\n\t...Good luck.\n\n\n\tGarE is requested.")
 	
 	/* user input for the information needed */
    	var msg = prompt("What is your Subject Line?\n\n")
 	var msg2 = prompt("What is your Pre Header Text?\n\n")
-	var msg5 = prompt("Insert the SPF document's fineprint here:\n\n");
-	var msg3 = prompt("For the image path...The email's season and name?\n\n")
+	var msg5 = prompt("Insert the fineprint here:\n\n");
+	var msg3 = prompt("Your full image path?\n\n")
 	var msg6 = prompt("What is the HEX value of the **BACKGROUND** in the header?\n\n");
 	var msg7 = confirm("Last question...\n\nBlack text in the Top Nav?\n\n(Click \"OK\" for Black, \"Cancel\" for White.)\n\n");
 		
@@ -28,17 +28,17 @@ javascript:(function(){ if (typeof jQuery == 'undefined') {
 	var GC_check = Boolean(false);
 	
 	//If "true" above, enter in the following data for the global banner.
-	var gift_card_banner_link = "http://www.garnethill.com/gift-shop/gift-cards/";
-	var gift_card_banner_img = "http://www.garnethill.com/wcsstore/images/GarnetHill/_media/_assets/gift-card.jpg";
+	//var gift_card_banner_link = "http://www.garnethill.com/gift-shop/gift-cards/";
+	//var gift_card_banner_img = "http://www.garnethill.com/wcsstore/images/GarnetHill/_media/_assets/gift-card.jpg";
 	
 	//For the alt text, be sure to "escape" the single apostrophe with a backslash. Example: Girls' becomes Girls\' 
-	var gift_card_banner_alt = "Give The Gift That Always Fits: Garnet Hill Gift Cards";
+	//var gift_card_banner_alt = "Give The Gift That Always Fits: Garnet Hill Gift Cards";
 	
 	//Specific Fineprint for the Global banner
 	
-	var GCFP = ' &lt;strong&gt;Gift cards are available and don\'t expire.lt;/strong&gt;'	
-	var GCBnrPre = ' Gift cards are available and don\'t expire.';	
-	var GCBnrRich = ' lt;strong&gt;Gift cards are available and don\'t expire.lt;/strong&gt;';
+	//var GCFP = ' &lt;strong&gt;Gift cards are available and don\'t expire.lt;/strong&gt;'	
+	//var GCBnrPre = ' Gift cards are available and don\'t expire.';	
+	//var GCBnrRich = ' lt;strong&gt;Gift cards are available and don\'t expire.lt;/strong&gt;';
 		
 	/******* End Global Promo Banner *******/
 	
@@ -59,22 +59,22 @@ javascript:(function(){ if (typeof jQuery == 'undefined') {
 	 			
 	//		&amp;amp;
 	
-	var rootLink = '&gt;\n\t\t&lt;a href="http://www.garnethill.com/';
+	var rootLink = '&gt;\n\t\t&lt;a href="http://www.**yourdomainnamehere**.com/';
 	
-	var tnav1 = "Women\'s Fashion";
-	var tnav1Link = rootLink+'womens-fashion/"';
+	var tnav1 = "Location 1";
+	var tnav1Link = rootLink+'location1/"';
 	
-	var tnav2 = "Bedding &amp;amp; Bath";
-	var tnav2Link = rootLink+'bedding-bath/"';
+	var tnav2 = "Location 2";
+	var tnav2Link = rootLink+'location2/"';
 	
-	var tnav3 = "Rugs &amp;amp; Home Decor";
-	var tnav3Link = rootLink+'rugs-home-decor/"';
+	var tnav3 = "Location 3";
+	var tnav3Link = rootLink+'location3/"';
 	
-	var tnav4 = "garnet hill kids";
-	var tnav4Link = rootLink+'girls-clothing/"';
+	var tnav4 = "Location 4";
+	var tnav4Link = rootLink+'location4/"';
 	
-	var tnav5 = "Clearance";
-	var tnav5Link = rootLink+'sale-clearance/"';
+	var tnav5 = "Location 5";
+	var tnav5Link = rootLink+'location5/"';
 	
 	var tnav6 = "";
 	var tnav6Link = "";
@@ -118,11 +118,11 @@ javascript:(function(){ if (typeof jQuery == 'undefined') {
 	
 	
 		
-	if(GC_check == true){
-		var msg4 = confirm("Use the Gift Card Banner?\n\nPress OK to use it.\nPress CANCEL to not use it.\n\n");
-	} else {
+	//if(GC_check == true){
+	//	var msg4 = confirm("Use the Gift Card Banner?\n\nPress OK to use it.\nPress CANCEL to not use it.\n\n");
+	//} else {
 		var msg4 = Boolean(false);
-	}
+	//}
 	
 	/* REPLACEMENT FUNCTION FOR REPLACING THE ARRAY OF SPECIAL CHARACTERS */
 	
@@ -181,32 +181,28 @@ function runthis() {
 	
 	 
 			fineprint = msg5;
-			if (msg4!=false){
-					$("#Table_01 td:last").attr("style", "font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;");
-					tableClose = "&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;table width=\"640\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" bgcolor=\"#ffffff\" style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;\"&gt;\n&lt;tr&gt;\n&lt;td&gt;\n"+GC_Bnr+"&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;table width=\"640\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" bgcolor=\"#ffffff\" style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;\"&gt;\n&lt;tr&gt; \n&lt;td&gt;\n";
-					fineprint+= GCFP;
-			}else{
+		//	if (msg4!=false){
+		//			$("#Table_01 td:last").attr("style", "font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;");
+		//			tableClose = "&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;table width=\"640\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" bgcolor=\"#ffffff\" style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;\"&gt;\n&lt;tr&gt;\n&lt;td&gt;\n"+GC_Bnr+"&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;table width=\"640\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" bgcolor=\"#ffffff\" style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;\"&gt;\n&lt;tr&gt; \n&lt;td&gt;\n";
+		//			fineprint+= GCFP;
+		//	}else{
 				tableClose = '';
 				GCBnrPre = '';
 				GCBnrRich = '';
-			}
-			
+		//	}
 			fineprint2 = fineprint;
 			fineprint3 = fineprint;
-			fineprint = fineprint.replace(/\n/g, '')/*.replace(/[#]/g, '')*/.replace(/[@]/g, '').replace(/[~]/g, '').replace(/[\u0027]/g, '&amp;#39;').replace(/[\u2122]/g, '&amp;#153;').replace(/[\u00AE]/g, '&amp;#174;').replace(/[\u201c]/g, '&amp;#34;').replace(/[\u201D]/g, '&amp;#34;').replace(/[\u2018]/g, '&amp;#39;').replace(/[\u2019]/g, '&amp;#39;').replace(/[\u00D8]/g, '&amp;#216;').replace(/[\u00F8]/g, '&amp;#248;').replace(/[\u2015]/g, '--').replace(/[\u2014]/g, '--').replace(/[\u2013]/g, '--').replace(/[\u2012]/g, '--').replace(/[\u2011]/g, '-').replace(/[\u2010]/g, '-');
-			
-			
+				
 			fineprint3 = fineprint3.replace(/\n/g, '')/*.replace(/[#]/g, '')*/.replace(/[@]/g, '').replace(/[~]/g, '');
 			fineprint3 = fineprint3.replace(/[\x2a]/g, '&lt;strong&gt;*').replace(/[\x3a]/g, ':&lt;/strong&gt;');
-			fineprint3 = fineprint3.replace(/[\u0027]/g, '&amp;#39;').replace(/[\u2122]/g, '&amp;#153;').replace(/[\u00AE]/g, '&amp;#174;').replace(/[\u201c]/g, '&amp;#34;').replace(/[\u201D]/g, '&amp;#34;').replace(/[\u2018]/g, '&amp;#39;').replace(/[\u2019]/g, '&amp;#39;').replace(/[\u00D8]/g, '&amp;#216;').replace(/[\u00F8]/g, '&amp;#248;').replace(/[\u2015]/g, '--').replace(/[\u2014]/g, '--').replace(/[\u2013]/g, '--').replace(/[\u2012]/g, '--').replace(/[\u2011]/g, '-').replace(/[\u2010]/g, '-');
+		
 			
 			//add '@' and '~' characters before and after FP to replace as div tag elements
 			fineprint2 = '@' + fineprint2 + '~';
 											
 			//replace '*' and ':' with strong tags to bold FP header elements
 			fineprint2 = fineprint2.replace(/[\x2a]/g, '&lt;strong&gt;*').replace(/[\x3a]/g, ':&lt;/strong&gt;');
-			fineprint2 = fineprint2.replace(/[\u0027]/g, '&amp;#39;').replace(/[\u2122]/g, '&amp;#153;').replace(/[\u00AE]/g, '&amp;#174;').replace(/[\u201c]/g, '&amp;#34;').replace(/[\u201D]/g, '&amp;#34;').replace(/[\u2018]/g, '&amp;#39;').replace(/[\u2019]/g, '&amp;#39;').replace(/[\u00D8]/g, '&amp;#216;').replace(/[\u00F8]/g, '&amp;#248;').replace(/[\u2015]/g, '--').replace(/[\u2014]/g, '--').replace(/[\u2013]/g, '--').replace(/[\u2012]/g, '--').replace(/[\u2011]/g, '-').replace(/[\u2010]/g, '-');
-			
+				
 			//replace @ as div tag element adding borders above and below the fine print
 			//replace ~ as div close tag 
 			fineprint2 = fineprint2.replace(/[@]/g,'\t\t\&lt;!--%%d_gift_card_1%%--&gt;\n\n\n&lt;table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="640"&gt;\n&lt;tbody&gt;\n\t&lt;tr&gt;\n\t\t&lt;td style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #333333;"&gt;\n\n\t\t\t&lt;div style="padding&#58; 9px 0 3px 0; margin-top&#58;10px; margin-bottom&#58;6px; font-family&#58; Verdana, Arial, Helvetica, sans-serif; font-size&#58; 10px; color&#58; #333333; border-top&#58;#e2e2e2 solid 1px; "&gt;\n').replace(/[~]/g, '\n\t\t&lt;/div&gt;\n\t\t&lt;/td&gt;\n\t&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n\n');
