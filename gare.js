@@ -242,8 +242,7 @@ function runthis() {
 		
 		table = table.replace(/u003E/g, 'test').replace(/[\]/g, '').replace(/[\u00AE]/g, '&amp;#174;').replace(/[\u201c]/g, '&amp;#34;').replace(/[\u201D]/g, '&amp;#34;').replace(/[\u0027]/g, '&amp;#39;').replace(/[\u2018]/g, '&amp;#39;').replace(/[\u2019]/g, '&amp;#39;').replace(/[\u2015]/g, '--').replace(/[\u2014]/g, '--').replace(/[\u2013]/g, '--').replace(/[\u2012]/g, '--').replace(/[\u2011]/g, '-').replace(/[\u2010]/g, '-').replace(/[\u2122]/g, '&amp;#0153;');
 		table = table.replace('&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;', '');
-		table = table.replace('&lt;script src="js-ui/js/jquery-ui-1.10.4.custom.js" type="text/javascript"&gt;&lt;/script&gt;', '');
-		table = table.replace('&lt;link src="js-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet"&gt;', '');
+		table = table.replace('&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;', '');
 		
 		// spell();
 		headerImg = '&lt;a href="http://www.garnethill.com"&gt;&lt;img src="http://www.garnethill.com/wcsstore/images/GarnetHill/_email/2014/'+msg3+'/gh_header-logo.gif" style="display:block; border:none;vertical-align:bottom;min-width:640px;"&gt;&lt;/a&gt;'
