@@ -1,5 +1,9 @@
 =-=-=_GARE Changelog_=-=-=
 
+4.5.1.4 - 
+Edited hex color initialization to remove chrome iOs bug.
+Added "custom hex" color functionality to prompt during initialization
+
 4.5.1.3 - 
 Updated script to be less "GH" and more universal
 
