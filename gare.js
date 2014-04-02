@@ -14,8 +14,7 @@ javascript:(function(){ if (typeof jQuery == 'undefined') {
 	var msg5 = prompt("Insert the fineprint here:\n\n");
 	var msg3 = prompt("Your full image path?\n\n")
 	var msg6 = prompt("What is the HEX value of the **BACKGROUND** in the header?\n\n");
-	var msg7 = confirm("Last question...\n\nBlack text in the Top Nav?\n\n(Click \"OK\" for Black, \"Cancel\" for White.)\n\n");
-		
+	var msg7 = prompt("Last question...\n\nBlack text in the Top Nav?\n\n\t+ Type \"y\" for black (#000)\n\t+ Type \"n\" for white (#fff)\n\n...or enter a 6-digit hex number for new color.\n\n");	
 		
 	/*============================= BEGIN SETTINGS AREA ===================================*/
 	
@@ -88,10 +87,12 @@ javascript:(function(){ if (typeof jQuery == 'undefined') {
 	/**********************************
 	* Top Nav Style declarations.
 	***********************************/
-	if(!msg7){
-		msg7 = "fff";
-	} else {
+	if(msg7 == 'y'){
 		msg7 = "000";
+	} else if(msg7 == 'n'){
+		msg7 = 'fff';
+	} else {
+		msg7 = msg7;
 	}
 	
 	// Style for the tables; color is from the prompt (msg6)
