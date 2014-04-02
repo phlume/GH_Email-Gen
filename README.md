@@ -7,7 +7,7 @@ This script/bookmarklet will parse a .psd's "save for web"  output into an html 
 
 ### Acknowledgements###
 
-**Special Thanks** to O'Ryan [https://github.com/ORyan] for the initial code from which to develop from...and the tool's "Awesome" name. Thank you to all who have, and might still, contribute(d) to this project.
+**Special Thanks** to [O'Ryan](https://github.com/ORyan) for the initial code from which to develop from...and the tool's "Awesome" name. Thank you to all who have, and might still, contribute(d) to this project.
 
 
 ### License###
