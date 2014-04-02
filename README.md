@@ -17,7 +17,4 @@ Thank you to all who have, and might still, contribute(d) to this project.
 
 <a name="lic"></a>
 ### License###
-_GarE_ by Chad Fillion is
-licensed under the [Creative Commons Attribution 3.0 Unported
-License](http://creativecommons.org/licenses/by/3.0/). This applies to all
-documents and translations in this repository.
+*_GarE_* by Chad Fillion is licensed under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/copyleft/gpl.html). This applies to all documents and translations in this repository.
